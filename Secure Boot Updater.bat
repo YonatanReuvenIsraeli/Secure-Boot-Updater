@@ -48,6 +48,6 @@ pause > nul 2>&1
 exit
 
 :"Exist"
-echo Please rename to something else or move to another location "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup\Secure Boot Updater.bat" in order for this batch file to proceed. "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup\Secure Boot Updater.bat" is not a system file. "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup\Secure Boot Updater.bat" is located in the folder "%cd%". Press any key to continue when "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup\Secure Boot Updater.bat" is renamed to something else or moved to another location.
+echo Please rename to something else or move to another location "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup\Secure Boot Updater.bat" in order for this batch file to proceed. "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup\Secure Boot Updater.bat" is not a system file. Press any key to continue when "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup\Secure Boot Updater.bat" is renamed to something else or moved to another location.
 pause > nul 2>&1
 goto "Update"
