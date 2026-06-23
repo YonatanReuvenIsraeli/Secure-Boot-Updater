@@ -50,7 +50,6 @@ echo Updating Secure Boot.
 (echo endlocal) >> "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup\Secure Boot Updater.bat"
 (echo start "" "%windir%\System32\cmd.exe" /c del "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup\Secure Boot Updater.bat" /f /q ^> nul 2^>^&1) >> "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup\Secure Boot Updater.bat"
 (echo exit) >> "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup\Secure Boot Updater.bat"
-echo.
 echo Restart needed to finish updating Secure Boot. Please save everything you want before restarting this PC! Press any key to restart this PC.
 pause > nul 2>&1
 "%windir%\System32\shutdown.exe" /r /t 0
