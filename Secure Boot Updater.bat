@@ -40,7 +40,7 @@ if exist "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup\Secure Boo
 "%windir%\System32\reg.exe" add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Secureboot" /v AvailableUpdates /t REG_DWORD /d 0x5944 /f > nul 2>&1
 "%windir%\System32\schtasks.exe" /run /tn "\Microsoft\Windows\PI\Secure-Boot-Update" > nul 2>&1
 (echo "%windir%\System32\schtasks.exe" /run /tn "\Microsoft\Windows\PI\Secure-Boot-Update" ^> nul 2^>^&1) > "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup\Secure Boot Updater.bat"
-(echo Secure Boot has been updated. Press any key to close this batch file.) >> "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup\Secure Boot Updater.bat"
+(echo echo Secure Boot has been updated. Press any key to close this batch file.) >> "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup\Secure Boot Updater.bat"
 (echo start "" "%windir%\System32\cmd.exe" /c del "%~f0" /f /q ^> nul 2^>^&1) >> "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup\Secure Boot Updater.bat"
 (echo exit) >> "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup\Secure Boot Updater.bat"
 echo.
