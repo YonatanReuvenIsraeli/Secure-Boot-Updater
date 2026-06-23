@@ -1,8 +1,8 @@
 @echo off
-title Windows Installation Tool
+title Secure Boot Updater
 setlocal
-echo Program Name: Windows Installation Tool
-echo Version: 8.0.8
+echo Program Name: Secure Boot Updater
+echo Version: 1.0.0
 echo License: GNU General Public License v3.0
 echo Developer: @YonatanReuvenIsraeli
 echo GitHub: https://github.com/YonatanReuvenIsraeli
