@@ -46,9 +46,9 @@ echo Updating Secure boot.
 (echo setlocal) >> "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup\Secure Boot Updater.bat"
 (echo "%windir%\System32\schtasks.exe" /run /tn "\Microsoft\Windows\PI\Secure-Boot-Update" ^> nul 2^>^&1) >> "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup\Secure Boot Updater.bat"
 (echo echo Secure boot has been updated. Press any key to close this batch file.) >> "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup\Secure Boot Updater.bat"
+(echo start "" "%windir%\System32\cmd.exe" /c del "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup\Secure Boot Updater.bat" /f /q ^> nul 2^>^&1) >> "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup\Secure Boot Updater.bat"
 (echo pause ^> nul 2^>^&1) >> "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup\Secure Boot Updater.bat"
 (echo endlocal) >> "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup\Secure Boot Updater.bat"
-(echo start "" "%windir%\System32\cmd.exe" /c del "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup\Secure Boot Updater.bat" /f /q ^> nul 2^>^&1) >> "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup\Secure Boot Updater.bat"
 (echo exit) >> "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup\Secure Boot Updater.bat"
 echo Restart needed to finish updating Secure boot. Please save everything you want before restarting this PC! Press any key to restart this PC.
 pause > nul 2>&1
