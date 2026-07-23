@@ -42,7 +42,7 @@ set /p SecureBoot=< "SecureBoot.txt"
 del "SecureBoot.txt" /f /q > nul 2>&1
 if /i "%SecureBootExist%"=="True" echo.
 if /i "%SecureBootExist%"=="True" echo You can now rename or move the file back to "SecureBoot.txt". Press any key to continue.
-if /i "%SecureBootExist%"=="True pause > nul 2>&1
+if /i "%SecureBootExist%"=="True" pause > nul 2>&1
 if /i "%SecureBootExist%"=="True" echo.
 if /i "%SecureBoot%"=="    UEFICA2023Status    REG_SZ    Updated" goto "AlreadyUpdated"
 if /i "%SecureBootExist%"=="" echo Secure boot is not updated. Press any key to update Secure boot.
