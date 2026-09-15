@@ -2,7 +2,7 @@
 title Secure Boot Updater
 setlocal
 echo Program Name: Secure Boot Updater
-echo Version: 2.0.0
+echo Version: 2.0.1
 echo License: GNU General Public License v3.0
 echo Developer: @YonatanReuvenIsraeli
 echo GitHub: https://github.com/YonatanReuvenIsraeli
@@ -90,8 +90,8 @@ echo Updating Secure boot.
 (echo if /i "%%SecureBoo%%"=="    UEFICA2023Status    REG_SZ    Updated" echo Secure boot has been updated. Press any key to close this batch file.) >> "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup\Secure Boot Updater.bat"
 (echo if /i not "%%SecureBoo%%"=="    UEFICA2023Status    REG_SZ    Updated" echo There has been an error and Secure boot has not been updated. Press any key to close this batch file.) >> "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup\Secure Boot Updater.bat"
 (echo start "" /min "%%windir%%\System32\cmd.exe" /c del "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup\Secure Boot Updater.bat" /f /q ^> nul 2^>^&1) >> "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup\Secure Boot Updater.bat"
-(echo pause ^> nul 2^>^&1) >> "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup\Secure Boot Updater.bat"
 (echo endlocal) >> "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup\Secure Boot Updater.bat"
+(echo pause ^> nul 2^>^&1) >> "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup\Secure Boot Updater.bat"
 (echo exit) >> "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup\Secure Boot Updater.bat"
 (echo.) >> "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup\Secure Boot Updater.bat") >> "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup\Secure Boot Updater.bat"
 (echo :"SecureBootExist") >> "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup\Secure Boot Updater.bat"
