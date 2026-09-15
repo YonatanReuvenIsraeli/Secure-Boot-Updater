@@ -1,4 +1,4 @@
-# Secure Boot Updater v2.0.0
+# Secure Boot Updater v2.0.1
 Update Secure boot manually.
 
 ## Notes:
